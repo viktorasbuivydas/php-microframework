@@ -6,33 +6,33 @@
     <h1>Server Error</h1>
     <p>An error occurred while processing the request.</p>
     {% if displayErrors %}
-        <p class="lead text-danger"><strong>{{ message }}</strong></p>
-        <table class="table">
-            <thead>
+        <p class="text-red-500"><strong>{{ message }}</strong></p>
+        <table class="bg-red-100 error">
+            <thead class="border-b border-red-300">
             <tr>
-                <th scope="col">Key</th>
-                <th scope="col">Value</th>
+                <th>Key</th>
+                <th>Value</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody class="divide-y divide-red-300">
             <tr>
-                <th scope="row">Message</th>
+                <th>Message</th>
                 <td><pre><code>{{ message }}</code></pre></td>
             </tr>
             <tr>
-                <th scope="row">File Name</th>
+                <th>File Name</th>
                 <td><pre><code>{{ fileName }}</code></pre></td>
             </tr>
             <tr>
-                <th scope="row">Line Number</th>
+                <th>Line Number</th>
                 <td><pre><code>{{ lineNumber }}</code></pre></td>
             </tr>
             <tr>
-                <th scope="row">Error Type</th>
+                <th>Error Type</th>
                 <td><pre><code>{{ errorType }}</code></pre></td>
             </tr>
             <tr>
-                <th scope="row">Backtrace</th>
+                <th>Backtrace</th>
                 <td><pre><code>{{ backtrace }}</code></pre></td>
             </tr>
             </tbody>

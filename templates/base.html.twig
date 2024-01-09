@@ -6,16 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="/public/build.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous">
+    <!-- Tailwind CSS -->
+    <link href="/build.css" rel="stylesheet">
 
     <title>{% block title %}PHP Microframework{% endblock %}</title>
 </head>
 <body>
-<div class="col-lg-8 mx-auto p-3 py-md-5">
+<div class="container bg-white p-4 mt-2">
     {% block body %}
     {% endblock %}
 </div>

@@ -1,27 +1,43 @@
 {% extends "base.html.twig" %}
 {% block body %}
-    <h1>Framework Demo</h1>
-    <p class="fs-5 col-md-8">Welcome! This content is displayed using the Demo Controller and a Twig
-        Template using the Bootstrap 5 framework.</p>
-    <p class="fs-5 col-md-8">Here are the details:</p>
-    <dl class="row">
-        <dt class="col-sm-3">Controller</dt>
-        <dd class="col-sm-9">Application\Controller\DemoController</dd>
+    <h1 class="text-xl font-bold">Framework Demo</h1>
+    <p class="mb-4">Welcome! This content is displayed using the Demo Controller and a Twig
+        Template using the Tailwind CSS framework.</p>
+    <p class="border-t">Here are the details:</p>
+    <div class="flex flex-col space-y-4">
+        <div>
+            <div class="font-bold text-lg">Controller</div>
+            <div>Application\Controller\DemoController</div>
+        </div>
 
-        <dt class="col-sm-3">Method</dt>
-        <dd class="col-sm-9">hello()</dd>
+        <div>
+            <div class="font-bold text-lg">Method</div>
+            <div>hello()</div>
+        </div>
+        
+        <div>
+            <div class="font-bold text-lg">File</div>
+            <div>src/Application/Controller/DemoController.php</div>
+        </div>
 
-        <dt class="col-sm-3">File</dt>
-        <dd class="col-sm-9">src/Application/Controller/DemoController.php</dd>
+        <div>
+            <div class="font-bold text-lg">Demo Template</div>
+            <div>templates/demo/main.html.twig</div>
+        </div>
 
-        <dt class="col-sm-3">Demo Template</dt>
-        <dd class="col-sm-9">templates/demo/main.html.twig</dd>
+        <div>
+            <div class="font-bold text-lg">Base Tailwind CSS Template</div>
+            <div>templates/base.html.twig</div>
+        </div>
 
-        <dt class="col-sm-3">Base Bootstrap 5 Template</dt>
-        <dd class="col-sm-9">templates/base.html.twig</dd>
-    </dl>
-    <h2>Examples</h2>
-    <ul>
+        <div>
+            <div class="font-bold text-lg">Tailwind CSS Config</div>
+            <div>tailwind.config.js</div>
+        </div>
+
+    </div>
+    <h2 class="mt-4">Examples</h2>
+    <ul class="flex flex-col space-y-1">
         <li>
             <a href="/demo/json/a/b/c">JSON response</a>
         </li>
@@ -41,7 +57,7 @@
         </li>
     </ul>
 
-    <h2>Additional Resources</h2>
+    <h2 class"mt-2">Additional Resources</h2>
 
     <ul>
         <li>
@@ -49,7 +65,7 @@
         </li>
 
         <li>
-            <a href="https://getbootstrap.com/">Bootstrap Framework</a>
+            <a href="https://tailwindcss.com/">Tailwind CSS Framework</a>
         </li>
     </ul>
 
