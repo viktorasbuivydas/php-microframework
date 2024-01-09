@@ -5,7 +5,7 @@ A minimal PHP 8 microframework for websites.
 ## Features
 
 - Automatic routing based on URL path, e.g. `https://domain/controller/method/parameters...`
-- Twig templates with Bootstrap 5 base template
+- Twig templates with Tailwind CSS base template
 
 ## Development Status
 
